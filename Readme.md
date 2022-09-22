@@ -11,7 +11,7 @@ I'm a Computer Science Engineer, & I'm confident to work on the projects with my
 
 - Web Development Stack,
     - FrontEnd: HTML, CSS, JavaScript
-    - BackEnd: Django
+    - BackEnd: Django | PHP
     - Database: SQL | NoSQL
 - Android Application Developer(React Native & Java)
 - Coding Skills in Java (DSA), Solved 1000+ DSA based questions
