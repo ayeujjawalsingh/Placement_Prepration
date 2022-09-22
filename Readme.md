@@ -18,12 +18,13 @@ I'm a Computer Science Engineer, & I'm confident to work on the projects with my
 
 ## Table Of Contents 🧾🧾
 
+* *[Java](Java)*
 * *[HTML](HTML)*
 * *[CSS](CSS)*
+* *[JavaScript](JavaScript)*
 * *[SQL](SQL)*
-* *[PHP](PHP)*
 * *[MongoDB](MongoDB)*
-* *[Java](Java)*
+* *[PHP](PHP)*
 
 <br/>
 
