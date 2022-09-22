@@ -20,8 +20,8 @@ I'm a Computer Science Engineer, & I'm confident to work on the projects with my
 
 ## Table Of Contents 🧾🧾
 
-* *[HTML](CSS)*
-* *[CSS](HTML)*
+* *[HTML](HTML)*
+* *[CSS](CSS)*
 * *[SQL](SQL)*
 * *[PHP](PHP)*
 * *[MongoDB](MongoDB)*
