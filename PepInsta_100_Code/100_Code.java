@@ -741,3 +741,141 @@ public class Main
 		System.out.print(val);
 	}
 }
+
+// 34th Hexadecimal to Decimal conversion
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		String hex = sc.next();
+		String digits = "0123456789ABCDEF";  
+        hex = hex.toUpperCase();  
+        int val = 0;  
+        for (int i = 0; i < hex.length(); i++)  {  
+            char c = hex.charAt(i);  
+            int d = digits.indexOf(c);  
+            val = 16*val + d;  
+        }  
+        System.out.print(val);
+	}
+}
+
+// 35th Decimal to Binary conversion
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int num = sc.nextInt();
+		String bin = "";
+		while(num!=0){
+		    if(num%2==0){
+		        bin=0 + bin;
+		    }else{
+		        bin=1 + bin;
+		    }
+		    num/=2;
+		}
+		System.out.print(bin);
+	}
+}
+
+// 36th Decimal to Octal Conversion
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int num = sc.nextInt();
+		String oct = "";
+		while(num!=0){
+		    if(num%8==0){
+		        oct=num%8 + oct;
+		    }else{
+		        oct=num%8 + oct;
+		    }
+		    num/=8;
+		}
+		System.out.print(oct);
+	}
+}
+
+// 37th Decimal to Hexadecimal Conversion
+
+import java.util.*;
+public class Main{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int decimal = sc.nextInt();
+		int rem;  
+        String hex="";   
+        char hexchars[]={'0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'};  
+        while(decimal>0){  
+            rem=decimal%16;   
+            hex=hexchars[rem]+hex;   
+            decimal=decimal/16;  
+        }  
+        System.out.print(hex);  
+	}
+}
+
+// 38th Binary to Octal conversion
+
+import java.util.*;
+public class Main{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int num1 = sc.nextInt();
+		int n = (int)(Math.log10(num1))+1;
+		int ans = 0;
+		for(int i = 0;i<n;i++){
+		    int var = (int)Math.pow(2,i);
+		    ans += (num1%10 * var);
+		    num1/=10;
+		}
+		int num = ans;
+		String oct = "";
+		while(num!=0){
+		    if(num%8==0){
+		        oct=num%8 + oct;
+		    }else{
+		        oct=num%8 + oct;
+		    }
+		    num/=8;
+		}
+		System.out.print(oct);
+	}
+}
+
+//39th Octal to Binary conversion
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int num1= sc.nextInt();
+		int n = (int)(Math.log10(num1))+1;
+		int ans = 0;
+		for(int i = 0;i<n;i++){
+		    int var = (int)Math.pow(8,i);
+		    ans += (num1%10 * var);
+		    num1/=10;
+		}
+		int num = ans;
+		String bin = "";
+		while(num!=0){
+		    if(num%2==0){
+		        bin=0 + bin;
+		    }else{
+		        bin=1 + bin;
+		    }
+		    num/=2;
+		}
+		System.out.print(bin);
+	}
+}
