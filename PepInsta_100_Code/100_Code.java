@@ -581,7 +581,24 @@ public class Main
     }
 }
 
-// 28th Highest Common Factors(HCF)
+// 28th Sum of the number in the given range
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int num1 = sc.nextInt();
+		int num2 = sc.nextInt();
+		int res = 0;
+		for(int i = num1 ; i<=num2;i++){
+		    res += i;
+		}
+		System.out.print(res);
+	}
+}
+
+// 29th Highest Common Factors(HCF)
 
 import java.util.*;
 public class Main
