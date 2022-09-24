@@ -703,6 +703,23 @@ public class Main
 	}
 }
 
+// 33th Octal to Decimal conversion
 
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int num1 = sc.nextInt();
+		int n = (int)(Math.log10(num1))+1;
+		int ans = 0;
+		for(int i = 0;i<n;i++){
+		    int var = (int)Math.pow(8,i);
+		    ans += (num1%10 * var);
+		    num1/=10;
+		}
+		System.out.print(ans);
+	}
+}
 
 
