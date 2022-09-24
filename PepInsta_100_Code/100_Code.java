@@ -682,3 +682,27 @@ public class Main
 		System.out.print(ans);
 	}
 }
+
+// 32th Greatest Common Divisor
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int num1 = sc.nextInt();
+		int num2 = sc.nextInt();
+		int hcf = 0;
+		while (num1 != num2){
+            if (num1 > num2)
+                num1 -= num2;
+            else
+                num2 -= num1;
+        }
+        System.out.println("The HCF: "+ num1);
+	}
+}
+
+
+
+
