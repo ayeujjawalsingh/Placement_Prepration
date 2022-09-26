@@ -906,3 +906,24 @@ public class Main
 		}
 	}
 }
+
+// 41th Permutations in which n people can occupy r seats in a classroom
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		int r = sc.nextInt();
+		System.out.println(Factorial(n)/Factorial(n-r));
+	}
+	public static int Factorial(int n) {
+		int res = 1;
+		for(int i = 1;i<=n;i++){
+		    res *=i;
+		}
+		return res;
+	}
+}
+
