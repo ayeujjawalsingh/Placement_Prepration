@@ -879,3 +879,30 @@ public class Main
 		System.out.print(bin);
 	}
 }
+
+// 40th Quadrants in which a given coordinate lies
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int X = sc.nextInt();
+		int Y = sc.nextInt();
+		if(X>0 && Y>0){
+		    System.out.println("1st Quadrants");
+		}else if(X<0 && Y>0){
+		    System.out.println("2nd Quadrants");
+		}else if(X<0 && Y<0){
+		    System.out.println("3rd Quadrants");
+		}else if(X > 0 && Y < 0){
+		    System.out.println("4th Quadrants");
+		}else if(X == 0 && Y == 0){
+		    System.out.println("Origin");
+		}else if(Y==0 && X != 0){
+		    System.out.println("x-axis");
+		}else if(X==0 && Y != 0){
+		    System.out.println("x-axis");
+		}
+	}
+}
