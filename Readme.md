@@ -20,7 +20,7 @@ I'm a Computer Science Engineer, & I'm confident to work on the projects with my
 * *[MongoDB](MongoDB)*
 * *[PHP](PHP)*
 * *[PrepInsta_100_Code](PrepInsta_100_Code)*
-* *[Pattern](Pattern)*
+* *[Pattern_Code](Pattern_Code)*
 * *[Sorting_Algorithm](Sorting_Algorithm)*
 
 <br/>
