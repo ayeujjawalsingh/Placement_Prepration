@@ -1135,3 +1135,36 @@ public class Main
 	}
 }
 
+// 49th Calculate the number of digits in an integer
+
+// 1st Method
+
+import java.util.*;
+class Main{	
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+		int number = sc.nextInt();
+		int digit = 0;
+		while(number != 0)
+		{
+			int pick_last = number % 10;
+			digit++;
+			number = number / 10;
+		}
+		System.out.print("Number of Digits = "+digit);
+
+	}
+}
+
+// 2nd Method
+
+import java.util.*;
+class Main{	
+    public static void main(String[] args){
+		Scanner sc = new Scanner(System.in);
+		int number = sc.nextInt();
+		int digit = (int)(Math.log10(number))+1;
+		System.out.print("Number of Digits = "+digit);
+
+	}
+}
