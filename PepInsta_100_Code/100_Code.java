@@ -1058,3 +1058,35 @@ public class Main
 		return c;
 	}
 }
+
+// 46th Code to Count Possible Decoding Of A Given Digit Sequence
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		String str = sc.next();
+		char[] dig= str.toCharArray();
+		System.out.println(DecodingOfAGivenDigit(dig,dig.length));
+	}
+	public static int DecodingOfAGivenDigit(char []dig,int a){
+	    int cnt[] = new int[a+ 1];
+
+        cnt[0] = 1;
+
+        cnt[1] = 1;
+
+        for (int k = 2; k <= a; k++) 
+        { 
+            cnt[k] = 0; 
+
+            cnt[k] = cnt[k-1];
+
+            if (dig[k-2] == '1' || (dig[k-2] == '2' && dig[k-1] < '7') )
+
+                cnt[k] += cnt[k-2];
+        }
+        return cnt[a];
+	}
+}
