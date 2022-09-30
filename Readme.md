@@ -1,8 +1,4 @@
-</p><img src="https://komarev.com/ghpvc/?username=ayeujjawalsingh&label=Profile%20Visiters&color=0e75b6&style=flat" alt="ayeujjawalsingh" />
 
-
-
-# <p align="center"> Welcome🙏🏻 
 
 # Hi, I'm Ujjawal!👋
 I'm a Computer Science Engineer, & I'm confident to work on the projects with my own experience & skills...
