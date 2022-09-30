@@ -1090,3 +1090,30 @@ public class Main
         return cnt[a];
 	}
 }
+
+// 47th Calculate the area of Circle
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter 0 or 1 : 0 for Radius and 1 for Diameter: ");
+		int in = sc.nextInt();
+		if(in == 0){
+		    System.out.println("Enter the radius: ");
+		    int r = sc.nextInt();
+		    System.out.println(3.14*r*r);
+		}
+		else if(in == 1){
+		    System.out.println("Enter the diameter: ");
+		    int d = sc.nextInt();
+		    System.out.println((3.14*d*d)/4);
+		}else{
+		    System.out.println("You click wrong number");
+		}
+	}
+}
+
+
+
