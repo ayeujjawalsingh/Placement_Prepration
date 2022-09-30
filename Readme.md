@@ -26,6 +26,7 @@ I'm a Computer Science Engineer, & I'm confident to work on the projects with my
 * *[MongoDB](MongoDB)*
 * *[PHP](PHP)*
 * *[PepInsta_100_Code](PepInsta_100_Code)*
+* *[Pattern](Pattern)*
 * *[Sorting_Algorithm](Sorting_Algorithm)*
 
 <br/>
