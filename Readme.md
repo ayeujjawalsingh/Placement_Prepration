@@ -1,5 +1,3 @@
-
-
 # Hi, I'm Ujjawal!👋
 I'm a Computer Science Engineer, & I'm confident to work on the projects with my own experience & skills...
 
