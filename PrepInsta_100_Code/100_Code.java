@@ -1169,6 +1169,93 @@ class Main{
 	}
 }
 
+// 51th Counting number of days in a given month of a year
+
+// Method 1
+
+import java.util.*;
+class Main{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the month: ");
+        int month = sc.nextInt();
+        System.out.print("Enter the year: ");
+        int year = sc.nextInt();
+        if((month==2) && ((year%4==0) || ((year%100==0)&&(year%400==0))))
+            System.out.println("Number of days is 29");
+        else if(month==2)
+            System.out.println("Number of days is 28");
+        else if(month==1 || month==3 || month==5 || month==7 || month==8 || month==10 || month==12)
+            System.out.println("Number of days is 31");
+        else
+            System.out.println("Number of days is 30");
+    }
+}
+
+// Method 2
+
+import java.util.*;
+class Main{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the month: ");
+        int month = sc.nextInt();
+        System.out.print("Enter the year: ");
+        int year = sc.nextInt();
+        switch (month) {
+            // Cases for 31 Days
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+            System.out.println("Number of days is 31");
+            break;
+            // Cases for 30 Days
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+            System.out.println("Number of days is 30");
+            break;
+            // Case for 28/29 Days
+            case 2:
+                if((year%400==0) || ((year%100!=0)&&(year%4==0)))
+                    System.out.println("Number of days is 29");
+                else System.out.println("Number of days is 28");
+            break;
+            default:
+            System.out.println("Invalid Month.");
+            break;
+        }
+    }
+}
+
+// Method 3
+
+import java.util.*;
+
+class Main{
+
+    public static void main(String args[]){
+        
+        int arr[] = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the month: ");
+        int month = sc.nextInt();
+        System.out.print("Enter the year: ");
+        int year = sc.nextInt();
+        //For checking leap year
+        if(month==2 && ((year%400==0) || ((year%100!=0)&&(year%4==0))))
+            System.out.println("Number of days is "+ arr[month-1]+1);
+    
+        else System.out.println("Number of days is "+arr[month-1]);
+            
+    }
+}
+
 // 52th Write a program to print the Occurrence of a Digit in a given Number
 
 import java.util.*;
