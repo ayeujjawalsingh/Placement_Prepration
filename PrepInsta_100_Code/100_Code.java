@@ -1169,6 +1169,25 @@ class Main{
 	}
 }
 
+// 52th Write a program to print the Occurrence of a Digit in a given Number
+
+import java.util.*;
+class Main{
+    public static void main (String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int d = sc.nextInt();
+        int count = 0;
+        while(n>0){
+            int rem = n%10;
+            if(rem == d)
+                count++;
+            n /= 10;
+        }
+        System.out.println(count);
+    }
+}
+
 // 53th Write a program to count Number of integers which has exactly X divisors 
 
 import java.util.*;
