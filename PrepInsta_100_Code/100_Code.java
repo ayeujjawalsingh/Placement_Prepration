@@ -1234,31 +1234,23 @@ class Main {
             /* Code path for first 2 digits */
             if (len >= 3) {
                 if (num[x] - '0' != 0) {
-                    System.out.print(
-                        single_digits[num[x] - '0'] + " ");
-                    System.out.print(tens_power[len - 3]
-                                     + " ");
-                    // here len can be 3 or 4
+                    System.out.print(single_digits[num[x] - '0'] + " ");
+                    System.out.print(tens_power[len - 3]+ " "); // here len can be 3 or 4
                 }
                 --len;
             }
   
             /* Code path for last 2 digits */
             else {
-                /* Need to explicitly handle
-                10-19. Sum of the two digits
-                is used as index of "two_digits"
-                array of strings */
+                // Need to explicitly handle 10-19. Sum of the two digits is used as index of "two_digits" array of strings
                 if (num[x] - '0' == 1) {
-                    int sum
-                        = num[x] - '0' + num[x + 1] - '0';
+                    int sum = num[x] - '0' + num[x + 1] - '0';
                     System.out.println(two_digits[sum]);
                     return;
                 }
   
                 /* Need to explicitly handle 20 */
-                else if (num[x] - '0' == 2
-                         && num[x + 1] - '0' == 0) {
+                else if (num[x] - '0' == 2 && num[x + 1] - '0' == 0) {
                     System.out.println("twenty");
                     return;
                 }
@@ -1268,14 +1260,12 @@ class Main {
                 else {
                     int i = (num[x] - '0');
                     if (i > 0)
-                        System.out.print(tens_multiple[i]
-                                         + " ");
+                        System.out.print(tens_multiple[i] + " ");
                     else
                         System.out.print("");
                     ++x;
                     if (num[x] - '0' != 0)
-                        System.out.println(
-                            single_digits[num[x] - '0']);
+                        System.out.println(single_digits[num[x] - '0']);
                 }
             }
             ++x;
