@@ -1451,3 +1451,22 @@ class Main{
         findRoots(a, b, c);
     }
 }
+
+// 55th Power of a number using recursion
+
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the number: ");
+        int  n = sc.nextInt();
+        System.out.print("Enter the Power: ");
+        int  p = sc.nextInt();
+        System.out.println(rec(n,p));
+    }
+    public static int rec(int n, int p){
+        if(p==0) return 1;
+        if(p==1) return n;
+        return n * rec(n,p-1);
+    }
+}
