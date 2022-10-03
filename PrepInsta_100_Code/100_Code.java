@@ -1470,3 +1470,26 @@ class Main{
         return n * rec(n,p-1);
     }
 }
+
+// 56th Prime number using recursion
+
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the number: ");
+        int  n = sc.nextInt();
+        if(prime(n,2)){
+            System.out.println("Prime Number");
+        }else{
+            System.out.println("Not a Prime Number");
+        }
+        
+    }
+    public static boolean prime(int n, int i){
+        if (n <= 2) return (n == 2) ? true : false; 
+        if (n % i == 0) return false; 
+        if (i * i > n) return true;
+        return prime(n,i+1);
+    }
+}
