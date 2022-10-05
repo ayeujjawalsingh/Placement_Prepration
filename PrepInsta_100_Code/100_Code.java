@@ -1518,3 +1518,28 @@ class Main{
         return largarr(arr,n-1);
     }
 }
+
+// 58th Smallest element in an array using recursion
+
+import java.util.*;
+class Main{
+    public static void main(String []args){
+        Scanner sc = new Scanner(System.in);
+        int n =  sc.nextInt();
+        int arr[] = new int[n];
+        for(int i = 0; i<n;i++){
+            arr[i]=sc.nextInt();
+        }
+        System.out.println("Smallest Number is: " + smalarr(arr,n-1));
+    }
+    public static int smal = Integer.MAX_VALUE;
+    public static int smalarr(int []arr,int n){
+        if(n==0){
+            return smal;
+        }
+        if(smal>arr[n]){
+            smal = arr[n];
+        }
+        return smalarr(arr,n-1);
+    }
+}
