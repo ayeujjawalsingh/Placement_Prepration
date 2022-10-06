@@ -1543,3 +1543,22 @@ class Main{
         return smalarr(arr,n-1);
     }
 }
+
+// 59th Reversing a Number using recursion
+
+import java.util.*;
+class Main{
+    public static void main(String []args){
+        Scanner sc = new Scanner(System.in);
+        int n =  sc.nextInt();
+        int len = (int)(Math.log10(n))+1;
+        Reversing(n,len,0);
+    }
+    public static void Reversing(int n, int len,int i){
+        if(i==len){
+            return;
+        }
+        System.out.print(n%10);
+        Reversing(n/10,len,++i);
+    }
+}
