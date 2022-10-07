@@ -1589,3 +1589,30 @@ class Main{
         return gcd(num1, num2-num1);
     }
 }
+
+// 61th LCM of two numbers using recursion
+
+import java.util.*;
+class Main{
+    public static void main(String []args){
+        Scanner sc = new Scanner(System.in);
+        int num1 =  sc.nextInt();
+        int num2 = sc.nextInt();
+        int val = gcd(num1,num2);
+        System.out.println((num1*num2)/val);
+    }
+    public static int gcd(int num1, int num2){
+        if (num1 == 0)
+          return num2;
+          
+        if (num2 == 0)
+          return num1;
+
+        if (num1 == num2)
+            return num1;
+            
+        if (num1 > num2)
+            return gcd(num1-num2, num2);
+        return gcd(num1, num2-num1);
+    }
+}
