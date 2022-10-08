@@ -1616,3 +1616,22 @@ class Main{
         return gcd(num1, num2-num1);
     }
 }
+
+// 62th Program to calculate length of the string using recursion
+
+import java.util.*;
+class Main{
+    public static void main(String []args){
+        Scanner sc = new Scanner(System.in);
+        String str =  sc.next();
+        System.out.println(recLength(str));
+    }
+    private static int recLength(String str)
+    {
+        if (str.equals(""))
+            return 0;
+        else
+            return recLength(str.substring(1)) + 1;
+    }
+    
+}
