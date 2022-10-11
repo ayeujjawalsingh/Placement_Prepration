@@ -1680,3 +1680,25 @@ class Main {
     }
 }
 
+// 65th Given a list arr of N integers, print sums of all subsets in it using recursion
+
+import java.util.*;
+public class Main{
+    public static void main(String []args){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int arr[] = new int[n];
+        for(int i = 0; i<n;i++){
+            arr[i] = sc.nextInt();
+        }
+        subsetSum(arr, 0, n-1, 0);
+    }
+    public static void subsetSum(int [] arr,int l, int r, int sum){
+        if(l>r){
+            System.out.println("Sum: "+ sum);
+            return;
+        }
+        subsetSum(arr, l+1, r, sum + arr[l]);
+        subsetSum(arr, l+1, r, sum);
+    }
+}
