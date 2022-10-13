@@ -1724,3 +1724,30 @@ public class Main{
         return n * factorial(n-1);
     }
 }
+
+// 67th Given a positive integer N, return the Nth row of pascal’s triangle using recursion
+
+import java.util.*;
+public class Main{
+    public static void main(String []args){
+        Scanner sc = new Scanner(System.in);
+        int val = sc.nextInt();
+        ArrayList<Integer> list = new ArrayList<>();
+        list = getRow(val);
+        System.out.println(list);
+    }
+    public static ArrayList<Integer> getRow(int rowIndex){
+        ArrayList <Integer> currow = new ArrayList();
+        currow.add(1);
+        if (rowIndex == 0) {
+            return currow;
+        }
+        ArrayList <Integer> prev = getRow(rowIndex- 1);
+        for (int i = 1; i < prev.size(); i++) {
+            int curr = prev.get(i - 1) + prev.get(i);
+            currow.add(curr);
+        }
+        currow.add(1);
+        return currow;
+    }
+}
