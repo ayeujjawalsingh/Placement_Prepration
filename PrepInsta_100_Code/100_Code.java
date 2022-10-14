@@ -1751,3 +1751,42 @@ public class Main{
         return currow;
     }
 }
+
+// 68th Given an integer N representing the number of pairs of parentheses, the task is to generate all combinations of well-formed(balanced) parentheses using recursion
+
+import java.util.*;
+public class Main{
+    public static void main(String []args){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        char []str = new char[2*n];
+        printParenthesis(str, n);
+    }
+    
+    public static void printParenthesis(char []str,int n){
+        if (n > 0)
+            _printParenthesis(str, 0, n, 0, 0);
+        return;
+    }
+    
+    public static void _printParenthesis(char str[], int pos, int n, int open, int close)
+    {
+        if (close == n) {
+            for (int i = 0; i < str.length; i++)
+                System.out.print(str[i]);
+            System.out.println();
+            return;
+        }
+        else {
+            if (open > close) {
+                str[pos] = '}';
+                _printParenthesis(str, pos + 1, n, open, close + 1);
+            }
+            if (open < n) {
+                str[pos] = '{';
+                _printParenthesis(str, pos + 1, n, open + 1, close);
+            }
+        }
+    }
+}
+
