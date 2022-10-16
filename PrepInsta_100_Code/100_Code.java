@@ -1807,7 +1807,7 @@ public class Main{
     }
 }
 
-// 70th Find all possible Palindromic partitions of the given String
+// 70th Find all possible Palindromic partitions of the given String using recursion
 
 import java.util.*;
 public class Main{
