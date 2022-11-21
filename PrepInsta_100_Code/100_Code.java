@@ -150,15 +150,15 @@ public class Main
 		for(int j = var1;j<=var2;j++){
 		    int val = 0;
 		    for(int i = 2;i<j;i++){
-    		    if(j%i==0){
-    		        System.out.println(j + " is not a Prime Number");
-    		        val++;
-    		        break;
+    		    	if(j%i==0){
+    		        	System.out.println(j + " is not a Prime Number");
+    		        	val++;
+    		        	break;
         		 }
-        	}
-        	if(val==0){
-        	    System.out.println(j + " is a Prime Number");
-        	}
+		    }
+        	    if(val==0){
+        	    	System.out.println(j + " is a Prime Number");
+        	     }
 		}
 		
 	}
