@@ -126,15 +126,15 @@ public class Main
 		int var = sc.nextInt();
 		int val = 0;
 		for(int i = 2;i<var;i++){
-		    if(var%i==0){
-		        System.out.print(var + " is not a Prime Number");
-		        val++;
-		        break;
-    		 }
-    	}
-    	if(val==0){
-    	    System.out.print(var + " is a Prime Number");
-    	}
+		    	if(var%i==0){
+				System.out.print(var + " is not a Prime Number");
+				val++;
+				break;
+    		 	}
+    		}
+    		if(val==0){
+    	    		System.out.print(var + " is a Prime Number");
+    		}
 	}
 }
 
