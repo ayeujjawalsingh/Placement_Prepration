@@ -64,12 +64,12 @@ public class Main
 		int var1 = sc.nextInt();
 		int var2 = sc.nextInt();
 		if(var1>var2){
-		    System.out.println(var1 + " is greater than " + var2);
+		    	System.out.println(var1 + " is greater than " + var2);
 		}else if(var1==var2){
-         System.out.println(var1 + " is equal to " + var2);
-     }
-     else{
-		    System.out.println(var2 + " is greater than " + var1);
+			System.out.println(var1 + " is equal to " + var2);
+		}
+		else{
+		    	System.out.println(var2 + " is greater than " + var1);
 		}
 	}
 }
@@ -81,11 +81,21 @@ public class Main
 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		int var = sc.nextInt();
-		if(var>=0){
-		    System.out.println("+ve");
-		}else{
-		    System.out.println("-ve");
+		int var1 = sc.nextInt();
+		int var2 = sc.nextInt();
+		int var3 = sc.nextInt();
+		if(var1>=var2){
+		    System.out.println(var1);
+		}else if(var1<=var2){
+		    System.out.println(var2);
+		}else if(var2<=var3){
+		    System.out.println(var3);
+		}else if(var3<=var2){
+		    System.out.println(var2);
+		}else if(var1<=var3){
+		    System.out.println(var3);
+		}else if(var1>=var3){
+			System.out.println(var1);
 		}
 	}
 }
